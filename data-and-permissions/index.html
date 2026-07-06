@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoSweep Data &amp; Permissions · Adz Dev Coding</title>
+  <meta name="description" content="A clear explanation of the device data and Android permissions EchoSweep may use.">
+  <meta name="theme-color" content="#100d13">
+  <meta property="og:title" content="EchoSweep Data &amp; Permissions">
+  <meta property="og:description" content="How EchoSweep uses Android storage and media access for local inspection and cleanup.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://echosweep.pl/data-and-permissions/">
+  <link rel="canonical" href="https://echosweep.pl/data-and-permissions/">
+  <link rel="icon" href="../assets/echosweep-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="EchoSweep home">
+        <img src="../assets/echosweep-mark.svg" alt="" width="44" height="44">
+        <span>EchoSweep</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy</a>
+        <a aria-current="page" href="../data-and-permissions/">Data &amp; permissions</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </header>
+
+    <main id="main" class="page">
+      <p class="eyebrow">Data &amp; permissions</p>
+      <h1>Why EchoSweep needs storage access</h1>
+      <p class="lead">EchoSweep can only inspect and compare files it can read. Android controls that access through permissions, storage boundaries, and the current user profile.</p>
+
+      <div class="card-grid compact-grid">
+        <article class="card">
+          <h2>Media access</h2>
+          <p>On newer Android versions, separate permissions may cover images, video, and audio. EchoSweep uses these categories to inventory media and run local analysis.</p>
+        </article>
+        <article class="card">
+          <h2>Broad storage access</h2>
+          <p>For a storage-management utility, broader shared-storage access may be requested so the user can inspect files beyond individually selected media. Android and Google Play apply additional restrictions to this capability.</p>
+        </article>
+        <article class="card">
+          <h2>No Internet permission</h2>
+          <p>The inspected source does not request Android's <code>INTERNET</code> permission. Local analysis is not designed to upload storage data to an Adz Dev Coding server.</p>
+        </article>
+      </div>
+
+      <section class="section">
+        <h2>What local analysis can include</h2>
+        <dl class="details-list">
+          <div><dt>Inventory</dt><dd>Names, paths, sizes, file types, and modification dates.</dd></div>
+          <div><dt>Exact duplicates</dt><dd>Size grouping, partial fingerprinting, SHA-256 hashing, and final byte comparison.</dd></div>
+          <div><dt>Similar photos</dt><dd>Local perceptual image analysis that suggests visually similar images; it is not proof that files are exact duplicates.</dd></div>
+          <div><dt>Cleanup records</dt><dd>Local history of selected actions, paths, timestamps, and sizes needed for quarantine, restore, or deletion workflows.</dd></div>
+        </dl>
+      </section>
+
+      <section class="notice">
+        <h2>Android still sets the boundary</h2>
+        <p>EchoSweep cannot claim access to other apps' private data, protected system areas, or another Android user's private storage. Access depends on the device, Android version, user profile, permissions, and file-system state.</p>
+      </section>
+
+      <section class="section">
+        <h2>Your controls</h2>
+        <ul class="plain-list">
+          <li>Review permission prompts before granting access.</li>
+          <li>Revoke storage or media permissions in Android settings.</li>
+          <li>Choose a narrower scan location where the app version supports it.</li>
+          <li>Review files before cleanup.</li>
+          <li>Clear app data or uninstall EchoSweep to remove local app records, subject to Android backup and transfer behavior.</li>
+        </ul>
+        <p>For the complete disclosure, read the <a href="../privacy/">EchoSweep Privacy Policy</a>.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div><strong>EchoSweep</strong><br>Published by Adz Dev Coding.</div>
+      <div>
+        <a href="../privacy/">Privacy Policy</a> ·
+        <a href="../data-and-permissions/">Data &amp; permissions</a> ·
+        <a href="../support/">Support</a><br>
+        <a href="mailto:addev@adz-dev-coding.pl">addev@adz-dev-coding.pl</a><br>
+        © 2026 Adz Dev Coding
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
