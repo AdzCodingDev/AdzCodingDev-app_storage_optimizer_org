@@ -32,7 +32,7 @@ The visual system was adapted from EchoSweep app screenshots without copying scr
 - `CNAME` contains exactly `echosweep.pl`;
 - no `<script>`, iframe, form, external font, tracking pixel, analytics tag, or advertising resource is present;
 - no HTTP asset URL is present;
-- the contact email is consistently `addev@adz-dev-coding.pl`;
+- the contact email is consistently `privacy@adz-dev-coding.pl`;
 - the publisher name is consistently `Adz Dev Coding`;
 - responsive rules cover phone, tablet, and desktop layouts;
 - keyboard-visible focus styles and skip links are present;
