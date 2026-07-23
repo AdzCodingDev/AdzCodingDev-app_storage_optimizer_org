@@ -64,5 +64,7 @@ code{color:#ead8ff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;ov
     radial-gradient(circle at 0% 16%,rgba(237,179,193,.12),transparent 15rem),
     linear-gradient(180deg,var(--deep),var(--bg) 45%,#0d0a10)}
   .site-shell{width:min(calc(100% - 22px),var(--max))}
+  .nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;padding:0}
+  .nav a{min-width:0;width:100%;padding:10px 8px;text-align:center;white-space:normal;font-size:.9rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
