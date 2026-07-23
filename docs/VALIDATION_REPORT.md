@@ -19,6 +19,10 @@ Static source validation of the public website implementation before GitHub Page
 
 The visual system was adapted from EchoSweep app screenshots without copying screen layouts or embedding the screenshots. The site uses a near-black background, graphite cards, lilac and pink highlights, restrained violet glow, rounded containers, and large readable controls.
 
+## Mobile polish checkpoint
+
+The mobile layout was tightened after reviewing operator-supplied Android Chrome screenshots. The update reduces first-screen navigation weight, keeps navigation horizontally compact on small screens, lightens card density, improves mobile hero rhythm, and preserves large touch targets.
+
 ## Static checks completed
 
 - HTML files parse as documents;
@@ -32,7 +36,8 @@ The visual system was adapted from EchoSweep app screenshots without copying scr
 - `CNAME` contains exactly `echosweep.pl`;
 - no `<script>`, iframe, form, external font, tracking pixel, analytics tag, or advertising resource is present;
 - no HTTP asset URL is present;
-- the contact email is consistently `privacy@adz-dev-coding.pl`;
+- privacy contact remains `privacy@adz-dev-coding.pl`;
+- support contact is `support@echosweep.pl`;
 - the publisher name is consistently `Adz Dev Coding`;
 - responsive rules cover phone, tablet, and desktop layouts;
 - keyboard-visible focus styles and skip links are present;
