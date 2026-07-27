@@ -24,6 +24,14 @@
 .section-heading h2{font-size:clamp(2rem,5vw,3.25rem)}
 .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .compact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.edition-grid{align-items:stretch}
+.edition-card{position:relative;overflow:hidden}
+.edition-card:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(180deg,var(--pink),var(--lilac))}
+.edition-dev:before{background:linear-gradient(180deg,var(--lilac),var(--violet))}
+.version-label{display:inline-flex;width:max-content;max-width:100%;margin:0 0 14px;padding:7px 11px;border:1px solid var(--soft);border-radius:999px;color:var(--text);background:rgba(16,13,19,.42);font-size:.78rem;font-weight:850;letter-spacing:.12em;line-height:1.2;text-transform:uppercase;overflow-wrap:anywhere}
+.edition-card h3{margin:0 0 10px;font-size:clamp(1.45rem,3vw,2rem);line-height:1.12}
+.edition-card>p:last-child{margin-bottom:0}
+.edition-note{margin:14px 0 0;color:var(--subtle);font-size:.95rem}
 .card,.notice,.contact-card,.policy-meta>div{
   border:1px solid var(--border);border-radius:24px;padding:24px;
   background:linear-gradient(145deg,rgba(74,68,79,.80),rgba(33,27,39,.92) 62%,rgba(24,20,28,.96));
@@ -61,6 +69,7 @@ dt{color:var(--lilac);font-weight:820} dd{margin:0}
   .hero-mark{min-height:190px;border-radius:28px}.hero-mark img{width:min(184px,62%)}
   .section{padding:30px 0}.section-heading{margin-bottom:18px}.section-heading h2{font-size:2rem}
   .card-grid{gap:12px}.card,.notice,.contact-card,.policy-meta>div{border-radius:18px;padding:17px;background:linear-gradient(150deg,rgba(74,68,79,.68),rgba(33,27,39,.92) 58%,rgba(16,13,19,.96))}
+  .version-label{white-space:normal}
   .card h2,.card h3,.notice h2{margin-top:0}.page{margin:38px auto}.page h1{font-size:clamp(2.2rem,12vw,3rem);line-height:1.04;letter-spacing:-.045em}.page>.lead{margin-bottom:24px}
   .policy-meta{gap:10px;margin:22px 0 6px}.legal section{padding:22px 0}.legal section h2{font-size:1.34rem}
   .details-list{gap:6px}.details-list div{grid-template-columns:1fr;gap:4px;padding:13px 0}.footer{flex-direction:column;font-size:.92rem;gap:12px}
